@@ -1,0 +1,25 @@
+body {
+	background: lightcyan;
+	width: 800px;
+	margin: 200px auto;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h1 {
+	color: maroon;
+	text-align: center;
+}
+p {
+	color: #ff0000;
+	border: 1px solid gray;
+	padding: 10px;
+	font-size: 1.2em;
+}
+div {
+	border: 5px solid maroon;
+	text-align: center;
+	padding: 5px;
+}
+ol {
+	border: 5px solid darksalmon;
+	border-radius: 10px;
+}
