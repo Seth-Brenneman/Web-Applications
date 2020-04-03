@@ -10,7 +10,7 @@ var commentWithClick = function () {
         if ($new_comment == "") {
             window.alert("You cannot post an empty comment.");
         } else {
-            $(".comments").append($("<p>").text($new_comment));
+            $(".comments").append($("<p>").text($new_comment).fadeIn());
             $(".comment-input input").val("");
         }
     });
@@ -24,10 +24,9 @@ var commentWithEnter = function () {
             window.alert("You cannot post an empty comment.");
         } else {
             if (code == 13) {
-                $(".comments").append($("<p>").text($new_comment));
+                $(".comments").append($("<p>").text($new_comment).fadeIn());
                 $(".comment-input input").val("");
             }
-            
         }
     }); 
 }
