@@ -1,0 +1,11 @@
+{
+    "studnet": {
+        "name": "Seth",
+        "age": 20,
+        "firends": ["Jacob", "Conrad", "Eric", "Wade", "Simon", "Ronit"],
+        "dog": {
+            "name": "Daiah",
+            "breed": "Labradoodle"
+        }
+    }
+}
