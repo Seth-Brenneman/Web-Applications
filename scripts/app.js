@@ -18,10 +18,30 @@ var main = function () {
         });
     
         var primality = function(num) {
-            if (num == 2 || 3 || 5 || 7 || 11) {
-                return "It is prime"
-            } else if (num == 0 || 1) {
-                return "It is not prime"
+            var limit = Math.sqrt(num);
+            
+            if (num % 1 != 0) {
+                return false;
+            } 
+            
+            if (num <= 1) {
+                return false;
+            } 
+            
+            if (num <= 3) {
+                return true;
+            } 
+            
+            if (num % 2 == 0) {
+                return false;
+            }
+
+            for (let divider = 3; divider <= limit; divider += 2) {
+                if (num % divider == 0) {
+                    return false
+                } else {
+                    return true;
+                }
             }
         }
      };
